@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#160d20"><title>For Shreya, From Sarani 💗</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#542642,#211329 48%,#100a17 90%);color:#fff0f5;font-family:Georgia,serif;text-align:center;min-height:100vh}
+main{width:min(700px,92%);margin:auto;padding:38px 0 50px}.eyebrow{font:11px Arial;letter-spacing:4px;text-transform:uppercase;color:#ffb9ce}
+h1{font-size:clamp(2.5rem,9vw,4.4rem);font-weight:normal;line-height:1.05;margin:20px 0}h1 span{color:#ff9dbb;font-style:italic}
+p{font-size:1rem;line-height:1.9;color:#f8e8f0}.subtitle{color:#dec8dc}.heart{font-size:55px;color:#ff9dbb;text-shadow:0 0 20px #f46b91;animation:beat 1.5s infinite}
+@keyframes beat{50%{transform:scale(1.13)}}.card{margin:24px auto;padding:26px 22px;border:1px solid #ffb4cf44;border-radius:24px;background:#ffffff0c;box-shadow:0 15px 55px #0003}
+h2{font-weight:normal;color:#ffc2d5;font-size:1.6rem}.note{font-style:italic;color:#ffbfd3}
+button{cursor:pointer;border-radius:999px;padding:13px 19px;margin:7px;font:inherit;transition:.2s}button:hover{transform:translateY(-2px)}
+.primary{border:0;background:linear-gradient(135deg,#ffb2ca,#f36c99);color:#321326}.secondary{border:1px solid #b97b9d;background:transparent;color:#ffe6ef}
+.hidden{display:none}.reveal{animation:appear .6s ease}@keyframes appear{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.promise{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.promise div{background:#ffffff0b;border-radius:15px;padding:15px 7px;font:13px Arial;line-height:1.6}.promise b{display:block;font-size:24px;color:#ffb2ca}
+footer{font:10px Arial;letter-spacing:2px;color:#b99db7;margin-top:30px}.float{position:fixed;bottom:-30px;pointer-events:none;animation:up linear forwards}@keyframes up{to{transform:translateY(-110vh) rotate(25deg);opacity:0}}
+@media(max-width:480px){.promise{grid-template-columns:1fr}.card{padding:22px 16px}}
+</style></head>
+<body><main>
+<div class="eyebrow">a little page made with a lot of love</div><div class="heart">♡</div>
+<h1>For My <span>Shreya</span></h1>
+<p class="subtitle">From your Sarani, with lots of love ♡</p>
+<p class="subtitle">Ei chotto page ta tomar jonno — karon kichu manush best friend hoyeo moner khub special ekta jayga niye thake 💗</p>
+<section class="card"><h2>Madam, ekta kotha shunbe? 🌷</h2>
+<p>Tumi amar kache shudhu ekjon bestie na. Tumi amar hasi, amar paglamir partner, amar mon kharap er shomoy ekta safe place. Tomar sathe chotto chotto kotha, random hasi, obhiman ar abar thik hoye jawa — egulo amar kache onek precious.</p>
+<p>Shob shomoy hoyto perfect bhabe care dekhate pari na, shob kotha hoyto bolteo pari na, kintu tomar bhalo thaka amar kache genuinely important. Tumi jokhon khushi thako, amar o bhalo lage; ar jokhon mon kharap thake, ichhe kore tomar pashe chupchap boshe thaki.</p>
+<p class="note">Tomake kono kichur jonno pressure dite chai na — shudhu chai tumi jano, tomar jonno amar care ta real.</p>
+<button class="primary" onclick="document.getElementById('letter').classList.remove('hidden');document.getElementById('letter').scrollIntoView({behavior:'smooth'});hearts()">Open your little letter 💌</button></section>
+<section id="letter" class="card hidden"><h2>To my favourite Madam 💗</h2>
+<p>Thank you amar life e thakar jonno. Thank you amar kotha shonar jonno, amar silly side ta tolerate korar jonno, ar nijer moto kore special hoye thakar jonno. Amader moddhe kokhono misunderstanding ba obhiman holeo, ami chai amra kotha bole shob thik korar cheshta kori.</p>
+<p>Ami chai tumi nijer moto kore glow koro, nijer shopno puron koro, ar kokhono nijeke eka mone koro na. Tomar success e ami cheer korbo, kharap dine tomar kotha shunbo, ar tomar boundaries ke respect korbo.</p>
+<p class="note">Bestie hoye thaka mane shudhu ekshathe hasha na — proyojone care kora, respect kora, ar mon diye pashe thaka.</p>
+<div class="promise"><div><b>♡</b>Lots of care</div><div><b>✿</b>Honest efforts</div><div><b>∞</b>Real friendship</div></div></section>
+<section class="card"><h2>One tiny question, Madam…</h2><p>Amar bestie hoye evabei thakbe toh? Nijer moto, ektu pagli, ektu adorable, ar purotai special? 🥹</p>
+<button class="primary" onclick="answer('Yayyy 💗 Bestie Madam er jonno ekta virtual hug, onek bhalobasha ar unlimited care!');hearts()">Of course, pagli ♡</button>
+<button class="secondary" onclick="answer('Thik ache Madam, time nao — tomar comfort ar feelings always matter 🤍')">Madam will think 🤍</button><p id="answer" class="hidden reveal"></p></section>
+<footer>MADE WITH CARE · SARANI ♡ SHREYA · BESTIES ALWAYS</footer></main>
+<script>
+function answer(t){let a=document.getElementById('answer');a.textContent=t;a.classList.remove('hidden')}
+function hearts(){for(let i=0;i<18;i++){let h=document.createElement('div');h.className='float';h.textContent=['♡','♥','✿','✨'][Math.floor(Math.random()*4)];h.style.left=Math.random()*100+'vw';h.style.fontSize=(15+Math.random()*22)+'px';h.style.color=['#ffb2ca','#f46b91','#fff1f5'][Math.floor(Math.random()*3)];h.style.animationDuration=(3+Math.random()*3)+'s';document.body.appendChild(h);setTimeout(()=>h.remove(),6200)}}
+</script></body></html>
